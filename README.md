@@ -3,8 +3,9 @@ This script can be used to easily change the sourced ROS version from command li
 
 Currently the script is set to be placed on the path "~/Setup/". If this is changed the paths inside of the script must also be changed.
 
-## Setup
 ---
+## Setup
+
 Run this line to add the script to your bashrc 
 ```
 echo "source ~/Setup/configure_ros/source_ros.sh" >> ~/.bashrc
@@ -15,6 +16,7 @@ Then just source the .bashrc
 source ~/.bashrc
 ```
 
+---
 ## Running the Script
 There are several commands that are added in the script but only two of them are of interest. The first command is used to be able to set or change the sourced version of ROS. 
 ```
@@ -44,6 +46,7 @@ ROS noetic:
 source /opt/ros/noetic.bash
 ```
 
+---
 ## Removal
 The scripts can be removed by running the two following commands:
 
