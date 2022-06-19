@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function rm_saved_source ()
 {
     rm ~/Setup/configure_ros/saved_source.txt

@@ -1,20 +1,17 @@
 # Configure ROS
 This script can be used to easily change the sourced ROS version from command line so that any new terminal windows will source the new ROS version selected.
 
-Currently the script is set to be placed on the path "~/Setup/". If this is changed the paths inside of the script must also be changed.
-
 ---
 ## Setup
 
-Run this line to add the script to your bashrc 
+The setup.sh script will setup all required files on your machine. To run this script run the following commands in the terminal 
 ```
-echo "source ~/Setup/configure_ros/source_ros.sh" >> ~/.bashrc
+cd configure_ros
+./setup.sh
 ```
+This will place a bash script containing the functions required for automatically sourcing ROS versions in ~/.scripts/.
 
-Then just source the .bashrc
-``` 
-source ~/.bashrc
-```
+- The setup script might not work correctly if it is not run inside of configure_ros/
 
 ---
 ## Running the Script
@@ -48,13 +45,9 @@ source /opt/ros/noetic.bash
 
 ---
 ## Removal
-The scripts can be removed by running the two following commands:
+The scripts installed with this package can be removed by running the following commands
 
-Remove the script from the .bashrc:
 ```
-sed -i '/source ~\/Setup\/configure_ros\/source_ros.sh/d' ~/.bashrc
-```
-Remove the configure_ros directory from your machine:
-```
-rm -rf ~/Setup/configure_ros/
+cd configure_ros
+./remove.sh
 ```
